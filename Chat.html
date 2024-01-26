@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <form>
+      <textarea id="chatArea" rows="10" cols="60" readonly></textarea>
+      <p id="waiting">
+	Waiting for connection to server...
+      </p>
+      <div id="nameDiv" style="display:none">
+	<label for="name">Enter your name: 
+	  <input type="text" id="name" size="30" />
+	</label>
+	<button type="button" id="sendName">Join chat with this name</button>
+      </div>
+      <div id="messageDiv" style="display:none">
+	<input type="text" id="message" size="60" />
+	<button type="button" id="sendIt">Send this message</button>
+      </div>
+      <p id="closed" style="display:none">
+	Connection with server has been closed.
+      </p>
+    </form>
+    <script src="chat_client.js">
+    </script>
+  </body>
+</html>
